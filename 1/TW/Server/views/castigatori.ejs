@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Lista castigatorilor</title>
+    <meta charset="utf-8">
+</head>
+
+<body class="containor">
+<%- include("../views/header") %>
+
+<%
+if(locals.BD)
+{
+%>
+    <form class="tabel" method="post">
+    <table>
+        <tr>
+            <th>Numar</th>
+            <th>Nume</th>
+            <th>Data</th>
+            <th>Trisor</th>
+        </tr>
+        <% for (var i = 0; i < BD.castig.length; i++) { %>
+        <tr>
+            <td><%= i+1%></td>
+            <td><%= BD.castig[i].nume %></td>
+            <td><%= BD.castig[i].data_adaugare %></td>
+            <td><button type='submit' id='stergebine' name="acelcastigator" value='<%= i+1%>'>Sterge</button></td>
+        </tr>
+        <% } %>
+    </table>
+    </form>
+<%}
+else
+{%>
+    <p> Nu a castigat nimeni pana acum.</p>
+<%}
+%>
+
+<%- include("../views/footer") %>
+</body>
+</html>

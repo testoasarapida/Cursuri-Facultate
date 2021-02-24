@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1589406562 source:e:\dadada\tema5\src\directedgraph.cpp
+	"directedGraph.h"
+	<iostream>
+	<list>
+
+1589406524 e:\dadada\tema5\include\directedgraph.h
+	<list>
+
+1589406951 source:e:\dadada\tema5\main.cpp
+	<iostream>
+	"directedGraph.h"
+

@@ -1,0 +1,618 @@
+/*---sub 600---*/
+@media screen and (max-width: 700px)
+{
+	body
+	{
+		background-image: url("Images/background.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	#container
+	{
+		
+		width:100%;
+	}
+	.titlu
+	{
+		text-align: center;
+	}
+	.sturioni
+	{
+		max-width: 80%; height: auto; margin-top: 5px;
+	}
+	.poza1
+	{
+		text-align: center;
+	}
+	#menu
+	{
+		width: 100%;
+		height: 10%;
+		float: left;
+		background-color: #0a8f8a;
+		text-align: center;
+	}
+	#text
+	{
+		width: 100%;
+		height: 80%;
+		float: left;
+	}
+	#stanga
+	{
+		width: 0;
+		height: 0;
+	}
+	#meniul
+	{
+		visibility: hidden;
+		height: 0;
+		width: 0;
+	}
+	#centru
+	{
+		width: 100%;
+		height: 100%;
+		float:left;
+		background-color: #0a8f8a;
+	}
+	#header
+	{
+		width: 100%;
+		height: 20%;
+	}
+	h1
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size: 8vw;
+		-webkit-text-stroke: 2px black;
+	}
+	h2
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size: 5vw;
+		-webkit-text-stroke: 1px black;
+	}
+	#invisibil
+	{
+		visibility: hidden;
+		height: 0;
+	}
+	.textlung
+	{
+		font-size: 3.5vw;
+		color: black;
+		text-align: justify;
+  		text-justify: inter-word;
+  		margin-right: 3%;
+  		margin-left: 3%;
+	}	
+	#Contact
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size:3.5vw;
+	}
+	#Afla
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size:3.5vw;
+	}
+	#Deseneaza
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size:3.5vw;
+	}
+	#Pastruga
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size:3.5vw;
+	}
+	.ofof
+	{
+		margin-left: 1%;
+	}
+	#panza
+	{
+		outline:1px solid black;
+		width:80%;
+		height: 100%;
+		margin-left: 10%;
+		margin-top: 2%;
+		background-color: white;
+	}
+	#myCanvas
+	{
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		outline: 4px solid black;
+	}
+	.fofo
+	{
+		font-size: 4vw;
+		text-align: center;
+	}
+	#apasand
+	{
+		font-family: "Arial", Times, serif;
+		text-align: center;
+		color: white;
+	}
+	#butonul
+	{
+		margin-left: 40%;
+		width: 20%;
+		height: 10%;
+		background-color: #0a8f8a;
+		border: 1px solid white;
+		border-radius: 10px;
+		color: white;
+		font-family: "Arial", Times, serif;
+		text-align: center;
+		font-size: 4vw;
+	}
+	#butonul:hover {background-color: #156b6e;}
+}
+
+/*---peste 600---*/
+@media screen and (min-width: 701px)
+{
+	body
+	{
+		background-color: #0a8f8a;
+		width: 99%;
+		height: 200%;
+		z-index: 1;
+	}
+	#container
+	{
+		background-image: url("Images/background.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		width: 99%;
+		height: 150%;
+		position: absolute;
+		z-index: 1;
+	}
+	#header
+	{
+		width: 100%;
+		height: 13%;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 10px;
+		z-index: 1;
+	}
+	#header > div 
+	{
+  		text-align: center;
+	}
+	.poza1
+	{
+		text-align: center;
+		z-index: 1;
+	}
+	#principal
+	{
+		width: 100%;
+		height: 85%;
+		z-index: 1;
+	}
+	#menu
+	{
+		width: 0%;
+		height: 70%;
+		float: left;
+		background-color: #0a8f8a;
+		z-index: 1;
+	}
+	#text
+	{
+		width: 100%;
+		height: 100%;
+		float: left;
+		z-index: 1;
+	}
+	#stanga
+	{
+		width: 20%;
+		float: left;
+		height: 100%;
+		z-index: 1;
+	}
+	#centru
+	{
+		width: 60%;
+		height: 100%;
+		float: left;
+		background-color: #0a8f8a;
+		z-index: 1;
+	}
+	.grow1
+	{
+  		animation-duration: 2s;
+  		animation-name: creste1;
+  		animation-fill-mode: both;
+	}
+	.small1
+	{
+		animation-duration: 2s;
+  		animation-name: scade1;
+  		animation-fill-mode: both;
+	}
+	.grow2
+	{
+		animation-duration: 2s;
+  		animation-name: creste2;
+  		animation-fill-mode: both;
+	}
+	.small2
+	{
+		animation-duration: 2s;
+  		animation-name: scade2;
+  		animation-fill-mode: both;
+	}
+	.grow3
+	{
+		animation-duration: 2s;
+  		animation-name: creste3;
+  		animation-fill-mode: both;
+	}
+	.small3
+	{
+		animation-duration: 2s;
+  		animation-name: scade3;
+  		animation-fill-mode: both;	
+	}
+	.grow4
+	{
+		animation-duration: 2s;
+  		animation-name: creste4;
+  		animation-fill-mode: both;
+	}
+	.small4
+	{
+		animation-duration: 2s;
+  		animation-name: scade4;
+  		animation-fill-mode: both;
+	}
+	.grow5
+	{
+		animation-duration: 2s;
+  		animation-name: creste5;
+  		animation-fill-mode: both;
+	}
+	.small5
+	{
+		animation-duration: 2s;
+  		animation-name: scade5;
+  		animation-fill-mode: both;
+	}
+	.grow6
+	{
+		animation-duration: 2s;
+  		animation-name: creste6;
+  		animation-fill-mode: both;
+	}
+	.small6
+	{
+		animation-duration: 2s;
+  		animation-name: scade6;
+  		animation-fill-mode: both;
+	}
+	@keyframes creste3
+	{
+		100%
+		{
+			margin-left: -75%;
+		}
+	}
+	@keyframes scade3
+	{
+		from
+		{
+			margin-left: -75%;	
+		}
+		to
+		{
+			margin-left: -59.5%;
+		}
+	}
+	@keyframes creste1
+	{
+  		from
+  		{
+    		width: 0%;
+  		}
+  		to
+  		{
+  			width: 20%;
+  		}
+	}
+	@keyframes scade1
+	{
+		from
+		{
+			width: 100%;
+		}
+		to 
+		{
+			width: 80%;
+		}
+	}
+	@keyframes creste2
+	{
+  		from
+  		{
+    		width: 80%;
+  		}
+  		to
+  		{
+  			width: 100%;
+  		}
+	}
+	@keyframes scade2
+	{
+		from 
+		{
+			width: 20%;
+		}
+		to 
+		{
+			width: 0%;
+		}
+	}
+	@keyframes creste4
+	{
+		from
+		{
+			width: 20%;
+		}
+		to
+		{
+			width: 0%;
+		}
+	}
+	@keyframes scade4
+	{
+		from
+		{
+			width: 0%;
+		}
+		to
+		{
+			width: 20%;
+		}
+	}
+	@keyframes creste5
+	{
+		from
+		{
+			width:60%;
+		}
+		to
+		{
+			width: 75%;
+		}
+	}
+	@keyframes scade5
+	{
+		from
+		{
+			width:75%;
+		}
+		to
+		{
+			width:60%;
+		}
+	}
+	@keyframes creste6
+	{
+		from
+		{
+			opacity: 0;
+		}
+		to
+		{
+			opacity: 1;
+		}
+	}
+	@keyframes scade6
+	{
+		from
+		{
+			opacity: 1;
+		}
+		to
+		{
+			opacity: 0;
+		}
+	}
+	#meniul
+	{
+		width:10%;
+		height:4%;
+		background-color: #0a8f8a;
+		border: 4px solid white;
+		border-radius: 10px;
+		color: white;
+		font-family: "Arial", Times, serif;
+		font-size: 2vw;
+		margin-left: -59.5%;
+		margin-top: 5px;
+		position: absolute;
+		z-index: 1;
+	}
+	#meniul:hover {background-color: #156b6e}
+	h1
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size: 4vw;
+		-webkit-text-stroke: 3px black;
+	}
+	h2
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size: 2.3vw;
+		-webkit-text-stroke: 2px black;
+	}
+	#Contact
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size:1.5vw;
+		padding:50px;
+		padding-left: 80px;
+		opacity: 0;
+	}
+	#Afla
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size:1.5vw;
+		padding:50px;
+		padding-left: 80px;
+		opacity: 0;
+	}
+	#Deseneaza
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size:1.5vw;
+		padding:50px;
+		padding-left: 80px;
+		opacity: 0;
+	}
+	#Pastruga
+	{
+		font-family: "Arial", Times, serif;
+		color: white;
+		font-size:1.5vw;
+		padding:50px;
+		padding-left: 80px;
+		opacity: 0;
+	}
+	.sturioni
+	{
+		max-width: 80%; height: auto; margin-top: 5px;
+	}
+	.textlung
+	{
+		font-size: 1.3vw;
+		color: black;
+		text-align: justify;
+  		text-justify: inter-word;
+  		margin-right: 3%;
+  		margin-left: 3%;
+	}
+	#haha
+	{
+		visibility: hidden;
+	}
+	.ofof
+	{
+		margin-left: 1%;
+	}
+
+
+
+	/*---pentru pagina deseneaza.html---*/
+	#panza
+	{
+		outline:2px solid black;
+		width:80%;
+		height: 40%;
+		margin-left: 10%;
+		position: relative;
+		background-color: white;
+		margin-top: -3%;
+	}
+	#myCanvas
+	{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		outline: 4px solid black;
+	}
+	#fofo
+	{
+		font-size: 2vw;
+		text-align: center;
+	}
+	#apasand
+	{
+		font-family: "Arial", Times, serif;
+		text-align: center;
+		color: white;
+	}
+	#butonul
+	{
+		margin-left: 1%;
+		width: 7%;
+		height: 3%;
+		background-color: #0a8f8a;
+		border: 4px solid white;
+		border-radius: 10px;
+		color: white;
+		font-family: "Arial", Times, serif;
+		font-size: 0.8vw;
+	}
+	#butonul:hover {background-color: #156b6e;}
+
+
+	/*---pentru pagina xsio.html---*/
+	#fofo2
+	{
+		font-size: 2vw;
+		text-align: center;
+	}
+	#XsiO
+	{
+		margin-left: 42.5%;
+		width: 15%;
+		height: 3%;
+		background-color: #0a8f8a;
+		border: 4px solid white;
+		border-radius: 10px;
+		color: white;
+		font-family: "Arial", Times, serif;
+		font-size: 0.8vw;
+	}
+	#XsiO:hover {background-color: #156b6e;}
+
+	#top
+	{
+		width: 100%;
+		height: 50%;
+	}
+	#tictactoe
+	{
+		width: 33%;
+		margin-left: 33%;
+		float: left;
+		z-index: 4;
+		visibility: hidden;
+	}
+	#wow
+	{
+		visibility: hidden;
+		text-align: center;
+		font-family: "Arial", Times, serif;
+		color: white;
+	}
+}

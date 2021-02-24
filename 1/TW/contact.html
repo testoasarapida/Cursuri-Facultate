@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8"/>
+  <title>Ferma de sturioni</title>
+    <link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="trbnoua2.css" media="screen" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+        <div class="poza1"><img src="Images/sturion_atlantic_r.png" alt="poza" class="sturioni"></div>
+        <div class="titlu">
+          <h1>Ferma de sturioni</h1>
+        </div>
+        <div class="poza1" id="invisibil"><img src="Images/sturion_atlantic.png" alt="poza" class="sturioni"></div>
+    </div>
+    <div id="principal">
+      <div id="menu">
+        <h2 id="haha">Meniu</h2>
+        <p id="Contact"><a href="index.html">Acasa</a></p>
+        <p id="Deseneaza"><a href="deseneaza.html">Deseneaza!</a></p>
+        <p id="Pastruga"><a href="xsio.html">Cega sau pastruga?</a></p>
+        <p id="Afla"><a href="https://ro.wikipedia.org/wiki/Sturion">Afla mai multe despre sturioni</a></p>
+      </div>
+      <div id="text">
+        <button id="meniul" onclick="animatie();">Meniu</button>
+        <div id="stanga"></div>
+        <div id="centru">
+            <h2 style="text-align: center;">Cu dragoste, din 1995</h2>
+            <h2 class="ofof">Inscrie-te!</h2>
+            <p class="eticheta">In acest fel, vei avea posibilitatea sa vezi detaliile noastre de contact.</p>
+            <label class="eticheta" for="utilizator">Utilizator:</label><input type="text" class="textbox" id="utilizator" name="utilizator" autocomplete="off"><br><br>
+            <label class="eticheta" for="parola">Parola:</label><input type="password" class="textbox" id="parola" name="parola" autocomplete="off"><br><br>
+            <input class="eticheta" id="inscriere" type="submit" value="Inscrie-te">
+            <h2 class="ofof">Login</h2>
+            <label class="eticheta" for="utilizator">Utilizator:</label><input type="text" class="textbox" id="utilizator" name="utilizator" autocomplete="off"><br><br>
+            <label class="eticheta" for="parola">Parola:</label><input type="password" class="textbox" id="parola" name="parola" autocomplete="off"><br><br>
+            <input class="eticheta" id="inscriere" type="submit" value="Inscrie-te">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Adauga castigator</title>
+    <script>
+        function functiadata()
+        {
+            let currentdate = new Date();
+            let datetime = currentdate.getDate() + "/" + (currentdate.getMonth()+1)  + "/" + currentdate.getFullYear() + " la " + currentdate.getHours() + ":" + currentdate.getMinutes();
+            document.getElementById('datacurenta').value = datetime;
+        }
+    </script>
+</head>
+<body>
+<%- include("../views/header") %>
+<form class="date" method="post">
+    <p>
+        <label>
+            Nume: <input type="text" name="nume" value="" autocomplete="off">
+        </label>
+    </p>
+    <p>
+        <label>
+            Data: <input type="text" name="data_adaugare" id="datacurenta" value="" onclick="functiadata();" autocomplete="off">
+        </label>
+    </p>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+</form>
+<%- include("../views/footer") %>
+</body>
+</html>

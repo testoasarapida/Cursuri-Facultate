@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Dadada/git/LFA/Tema_2/Minimizare-DFA/main.cpp
+iostream
+-
+fstream
+-
+list
+-
+map
+-
+string
+-
+

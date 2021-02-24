@@ -1,0 +1,11 @@
+10
+PESTE crap 2 0 60
+NEVERTEBRAT melc 2 1 5
+PESTE stiuca 2 1 40
+MAMIFER leu 4 0 150
+PESTE somn 2 1 150
+PASARE strut 2 0 gri
+PESTE rechin 2 1 310
+REPTILA broasca 3 4 5
+PESTE pastrav 2 0 10
+PESTE sturion 2 1 200

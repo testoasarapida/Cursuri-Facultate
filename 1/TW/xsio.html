@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8"/>
+    <title>Ferma de sturioni</title>
+    <link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="trbnoua.css" media="screen" />
+    <script src="script.js"></script>
+    <script src="ttt.js"></script>
+    <script>
+        window.onload = function ()
+        {
+            let person = prompt("Cum te numesti?");
+            if(person !== null)
+            {
+                document.title = "Salut, " + person + "!";
+                setTimeout(function () {
+                    document.title = "Ferma de sturioni";
+                }, 2000);
+            }
+            document.getElementById('afiseaza').addEventListener('click', function () {
+                fetch('http://localhost:3000/castigatori')
+                    .then(response => response.json())
+                    .then(data => {
+                        let showThis = document.getElementById('listacastigatori');
+                        showThis.innerHTML = "";
+                        for(i = 0; i < data['castig'].length; i++)
+                        {
+                            let userHTML = document.createElement('li');
+                            userHTML.innerHTML = data['castig'][i].nume + "  -  " + data['castig'][i].data_adaugare;
+                            showThis.appendChild(userHTML);
+                        }
+                    });
+            });
+            document.getElementById('inscriere').addEventListener('click', function(){
+                let newnume = document.getElementById('Nname').value;
+                let currentdate = new Date();
+                let datetime = currentdate.getDate() + "/" + (currentdate.getMonth()+1)  + "/" + currentdate.getFullYear() + " la " + currentdate.getHours() + ":" + currentdate.getMinutes();
+                fetch('http://localhost:3000/addCastigator',
+                    {
+                        method: 'POST',
+                        headers:
+                            {
+                                'Content-Type': 'application/json'
+                            },
+                        body: JSON.stringify(
+                            {
+                                nume: newnume,
+                                data_adaugare: datetime
+                            }
+                        )
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('inscriere').value = data.response;
+                        document.getElementById('inscriere').disabled = "true";
+                        document.getElementById('inscriere').style.pointerEvents = "none";
+                        document.getElementById('inscriere').style.backgroundColor = "grey";
+                        document.getElementById('listacastigatori').innerHTML = "";
+                    });
+            });
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <div class="poza1"><img src="Images/sturion_atlantic_r.png" alt="poza" class="sturioni"></div>
+        <div class="titlu">
+          <h1>Ferma de sturioni</h1>
+        </div>
+        <div class="poza1" id="invisibil"><img src="Images/sturion_atlantic.png" alt="poza" class="sturioni"></div>
+    </div>
+    <div id="principal">
+      <div id="menu">
+        <h2 id="haha">Meniu</h2>
+        <p id="Contact"><a href="index.html">Acasa</a></p>
+        <p id="Pastruga"><a href="contact.html">Inscrie-te</a></p>
+        <p id="Deseneaza"><a href="deseneaza.html">Deseneaza!</a></p>
+        <p id="Afla"><a href="https://ro.wikipedia.org/wiki/Sturion">Afla mai multe despre sturioni</a></p>
+      </div>
+      <div id="text">
+        <button id="meniul" onclick="animatie();">Meniu</button>
+        <div id="stanga"></div>
+        <div id="centru">
+            <h2 style="text-align: center;">Cu dragoste, din 1995</h2>
+            <h2 id="fofo2">Cine va castiga, cega sau pastruga?</h2>
+            <input type="button" id="XsiO" value="Testati-va fortele!" onclick="tictactoe();appear();">
+
+            <p id = "wow"></p>
+            <p class="eticheta">Castigatorule, trece-ti numele aici ca sa stie lumea de tine.</p>
+            <label class="eticheta" for="Nname">Nume:</label><input type="text" class="textbox" id="Nname" name="Nname" autocomplete="off"><br><br>
+
+            <input class="eticheta" id="inscriere" type="submit" value="Trimite">
+
+
+            <input class="eticheta" id="afiseaza" type="submit" value="Afiseaza castigatorii de pana acum.">
+            <ol class="eticheta" id="listacastigatori"></ol>
+
+            <div id="top">
+                <div id="tictactoe">
+                  <div id="field" align="center">
+                    <span style="float:right;"><img src="Images/xbutton.png" style="margin-right: 0px; margin-top: 0px; width: 35px; height: 35px;" onclick="vanish();"></span>
+                    <table>
+                    <tr>
+                      <td> 
+                      </td>
+                      <td>
+                        <img id="nextplayer" src="Images/bigdaddy.png" alt="player1">
+                      </td>
+                    </tr>
+                    <table>
+                    <tr>
+                      <td>
+                      <img id="field11" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                      <td>
+                        <img id="field12" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                      <td>
+                        <img id="field13" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img id="field21" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                      <td>
+                        <img id="field22" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                      <td>
+                        <img id="field23" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img id="field31" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                      <td>
+                        <img id="field32" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                      <td>
+                        <img id="field33" src="Images/unselected.png" alt="unselect" onclick="selectfield(this)">
+                      </td>
+                    </tr>
+                    </table>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  	<meta charset="utf-8"/>
+  	<title>Ferma de sturioni</title>
+  	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
+  	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  	<script src="script.js"></script>
+</head>
+<body>
+  	<div id="container">
+    	<div id="header">
+      		<div class="poza1"><img src="Images/sturion_atlantic_r.png" alt="poza" class="sturioni"></div>
+        		<div class="titlu">
+          			<h1>Ferma de sturioni</h1>
+        		</div>
+        	<div class="poza1" id="invisibil"><img src="Images/sturion_atlantic.png" alt="poza" class="sturioni"></div>
+    	</div>
+    	<div id="principal">
+      		<div id="menu">
+        		<h2 id="haha">Meniu</h2>
+        		<p id="Deseneaza"><a href="index.html">Acasa</a></p>
+        		<p id="Contact"><a href="contact.html">Inscrie-te</a></p>
+        		<p id="Pastruga"><a href="xsio.html">Cega sau pastruga?</a></p>
+        		<p id="Afla"><a href="https://ro.wikipedia.org/wiki/Sturion">Afla mai multe despre sturioni</a></p>
+      		</div>
+      		<div id="text">
+        		<button id="meniul" onclick="animatie();">Meniu</button>
+        		<div id="stanga"></div>
+        		<div id="centru">
+          			<h2 style="text-align: center;">Cu dragoste, din 1995</h2>
+          			<h2 id="fofo">Deseneaza un sturion, iar noi de dam seama de specie</h2>
+          			<p id="apasand">Apasand pe butonul Incepe, esti de acord ca noi sa pastram si sa utilizam desenele pe care le realizezi.</p>
+          			<input type="button" id="butonul" value="Incepe!">
+          			<div id="panza">
+          				<canvas id="myCanvas"></canvas>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+</body>
+</html>

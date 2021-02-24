@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1583727650 source:e:\dadada\nfa\main.cpp
+	<iostream>
+	<map>
+	<string>
+	<set>
+	<fstream>
+
