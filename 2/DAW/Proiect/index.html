@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Electrocord</title>
+</head>
+<body bgcolor="pink" style="font-family: Arial, Helvetica, sans-serif;">
+
+	<h1 style="text-align:center;">Electrocord</h1>
+	<h2><u>Despre</u></h2>
+	
+
+	<p> Site-ul Electrocord va fi un site care indexeaza albumele casei de discuri Electrocord. Pe de o parte, site-ul va functiona ca promotor pentru noile albume ale casei de discuri, dar principalul scop al site-ului va fi crearea de ratinguri si scrierea recenziilor de catre utlizatoripentru albume. De asemenea, fiecare artist care a colaborat cu casa de discuri Electrocord va avea o pagina de prezentare. Acestia vor avea conturi speciale prin care vor putea interactiona cu fanii si raspunde la recenziile albumelor.  
+	
+
+	<h2><u>Pagini</u></h2>
+
+	<ul>
+		<li><u id="p1">Pagina de start</u><p style="display:inline; visibility:hidden;" id="p_des1"> va fi locul de pornire al intregului site. Aici va fi prezentat un "feed" cu cele mai noi albume, va exista zona de login pentru useri si campul de cautare.</p></li>
+		<li><u id="p2">Pagina utilizatorului</u><p style="display:inline; visibility:hidden;" id="p_des2"> va fi locul unde utilizatorul isi va putea manageria contul.</p></li>
+		<li><u id="p3">Paginile albumelor</u><p style="display:inline; visibility:hidden;" id="p_des3"> - Fiecare album va avea propria pagina unde vor fi afisate date despre album, ratingul si recenziile acestuia.</p></li>
+		<li><u id="p4">Pagina de cautare</u><p style="display:inline; visibility:hidden;" id="p_des4"> va fi locul unde vor aparea rezultatele cautarii unui termen.</p></li>
+		<li><u id="p5">Pagina Top 20</u><p style="display:inline; visibility:hidden;" id="p_des5"> va fi pagina unde va fi afisat clasamentul celor mai apreciate 20 de albume.
+		<li><u id="p6">Dashboardul administratorului</u><p style="display:inline; visibility:hidden;" id="p_des6"> va fi o pagina la care publicul nu va avea acces de unde administratorii vor putea manageria baza de date, precum corecturi la albume sau adaugarea de albume noi.</p></li>
+	</ul>
+
+	<h2><u>Baza de date<u></h2>
+
+	<ul>
+		<li>Useri</li>
+		<li>Moderatori</li>
+		<li>Artisti</li>
+		<li>Albume</li>
+		<li>Ratinguri</li>
+	</ul>
+
+	<h2><u>Tipuri de useri</u></h2>
+
+	<ul>
+		<li><u>Userul</u></li>
+		<ul>
+			<li>Va scrie recenzii pentru albume.</li>
+			<li>Va da un rating albumelor.</li>
+			<li>Va putea adauga la favorite albumele preferate.</li>
+			<li>Isi va putea edita profilul, inclusiv datele de conectare sau va putea cere stergerea contului.</li>
+			<li>Va putea lasa feedback despre site administratorilor.</li>
+		</ul> 
+		<li><u>Artist</u></li>
+		<ul>
+			<li>Va beneficia de toate functionalitatile disponibile userului</li>
+			<li>Numele sau va fi evidentiat.</li>
+		</ul>
+		<li><u>Moderator</u></li>
+		<ul>
+			<li>Va beneficia de toate functionalitatile disponibile userului</li>
+			<li>Numele sau va fi evidentiat - diferit de al artistilor</li>
+			<li>Va putea edita sau sterge comentarii</li>
+			<li>Va putea raporta si recomanda stergerea anumitor conturi de utilizatori catre administrarori.</li>
+		</ul>
+		<li><u>Administrator</u></li>
+		<ul>
+			<li>Va avea acces la Dashboardul de management al bazelor de date.</li>
+			<li>Va putea sterge conturi de orice alt tip.</li>
+			<li>Va putea adauga, edita sau elimina albume, inclusiv toate metadatele precum poza, anul lansarii, lista de melodii sau ratingurile - de la caz la caz.</li> 
+		</ul>
+	</ul>
+
+	<h2><u>Diagrama site-ului</u><h2>
+
+	<img src="Pictures/diagrama.png">
+</body>
+
+
+<script type="text/javascript">
+		document.getElementById("p1").addEventListener("mouseover", func_p1, false);
+		document.getElementById("p1").addEventListener("mouseout", func_p_des1, false);
+
+		function func_p1()
+		{  
+			document.getElementById('p_des1').style.visibility = "visible";
+		}
+
+		function func_p_des1()
+		{  
+   			document.getElementById('p_des1').style.visibility = "hidden";
+		}
+
+
+
+		document.getElementById("p2").addEventListener("mouseover", func_p2, false);
+		document.getElementById("p2").addEventListener("mouseout", func_p_des2, false);
+
+		function func_p2()
+		{  
+			document.getElementById('p_des2').style.visibility = "visible";
+		}
+
+		function func_p_des2()
+		{  
+   			document.getElementById('p_des2').style.visibility = "hidden";
+		}
+
+
+		document.getElementById("p3").addEventListener("mouseover", func_p3, false);
+		document.getElementById("p3").addEventListener("mouseout", func_p_des3, false);
+
+		function func_p3()
+		{  
+			document.getElementById('p_des3').style.visibility = "visible";
+		}
+
+		function func_p_des3()
+		{  
+   			document.getElementById('p_des3').style.visibility = "hidden";
+		}
+
+
+		document.getElementById("p4").addEventListener("mouseover", func_p4, false);
+		document.getElementById("p4").addEventListener("mouseout", func_p_des4, false);
+
+		function func_p4()
+		{  
+			document.getElementById('p_des4').style.visibility = "visible";
+		}
+
+		function func_p_des4()
+		{  
+   			document.getElementById('p_des4').style.visibility = "hidden";
+		}
+
+
+		document.getElementById("p5").addEventListener("mouseover", func_p5, false);
+		document.getElementById("p5").addEventListener("mouseout", func_p_des5, false);
+
+		function func_p5()
+		{  
+			document.getElementById('p_des5').style.visibility = "visible";
+		}
+
+		function func_p_des5()
+		{  
+   			document.getElementById('p_des5').style.visibility = "hidden";
+		}
+
+		document.getElementById("p6").addEventListener("mouseover", func_p6, false);
+		document.getElementById("p6").addEventListener("mouseout", func_p_des6, false);
+
+		function func_p6()
+		{  
+			document.getElementById('p_des6').style.visibility = "visible";
+		}
+
+		function func_p_des6()
+		{  
+   			document.getElementById('p_des6').style.visibility = "hidden";
+		}
+
+
+	</script>
+</html>

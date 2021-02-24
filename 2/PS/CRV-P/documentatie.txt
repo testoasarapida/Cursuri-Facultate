@@ -1,0 +1,9 @@
+1. Nume: Mihailescu Andrei si David Bucur
+2. Am ales Proiectul nr.1 si am implementat taskurile 1,2,4,5,6,11,12. Proiectul a presupus crearea unui pachet R care sa implementeze multiple functionalitati in special care sa lucreze cu variabile aleatorii.
+3. Unu lucru incercat a fost sa cautam pe internet pachete care sa ne fi ajutat cu rezolvarea anumitor taskuri.
+4. Una dintre cele mai importante functii folosite a fost integrate. Aceasta a fost vitala in rezolvarea multor exercitii. Ca pachete aditionale, am incercat sa folosim pachete publice, dar de cele mai multe ori, acestea nu corespundeau cerintelor noastre, deci ne-am rezumat sa ne creem propriile functii.
+5. Comentarea codului se regasesete in fisierul hello.R
+6. Am intampinat anumite dificultati privind erorile in timpul executiei, dar
+le-am depasit in final.
+7. A fost un proiect placut din care am invatat destul de multe lucruri despre
+lucratul cu distributii si mai ales despre R.

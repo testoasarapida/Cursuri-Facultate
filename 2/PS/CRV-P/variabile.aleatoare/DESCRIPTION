@@ -1,0 +1,9 @@
+Package: variabile.aleatoare
+Type: Package
+Title: Continuous Random Variables Helper Functions
+Version: 0.1.0
+Author: Andrei Mihailescu and David Bucur
+Description: Implements multiple functions that facilitate working with CRVs.
+License: Apache License
+Encoding: UTF-8
+LazyData: true
